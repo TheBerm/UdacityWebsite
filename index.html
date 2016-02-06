@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>CS101 Class notes by Sam Berman-Cooper</title>
+  <link rel="stylesheet" href="style.css">
+  </head>
+
+<body>
+
+<!-- Link to the top of the page-->
+  <div class="fixed">
+    <div class="return_to_top">
+      <a href="#index">Return to Top</a>
+    </div>
+  </div>
+
+<!-- Citation: index structure based on Andy's example-->
+  <div class="brown lesson" id="index">
+    <h1>Sam's Notes - click on a topic for more information!</h1>
+    <div class="top indexrow">
+      <div class="transparent button">
+        <p><a href="#lesson-1">Lesson 1:<br>Basics of HTML</a></p>
+      </div>
+      <div class="beige button">
+        <p><a href="#lesson-1-1">What is the Web?</a></p>
+      </div>
+      <div class="beige button">
+        <p><a href="#lesson-1-2">Elements, Tags, and Attributes</a></p>
+      </div>
+      <div class="beige button">
+        <p><a href="#lesson-1-3">Block vs. Inline Elements</a></p>
+      </div>
+      <div class="beige button">
+        <p><a href="#lesson-1-4">Look it up!</a></p>
+      </div>
+    </div>
+
+    <div class="indexrow">
+      <div class="transparent button">
+        <p><a href="#lesson-2">Lesson 2:<br>HTML Structure</a></p>
+      </div>
+      <div class="cream button">
+        <p><a href="#lesson-2-1">A Website is like a House</a></p>
+      </div>
+      <div class="cream button">
+        <p><a href="#lesson-2-2">Document Object Model</a></p>
+      </div>
+      <div class="cream button">
+        <p><a href="#lesson-2-3">Boxify a Design</a></p>
+      </div>
+      <div class="cream button">
+        <p><a href="#lesson-2-4">Class Attributes</a></p>
+      </div>
+    </div>
+
+    <div class="bottom indexrow">
+      <div class="transparent button">
+        <a href="#lesson-3">Lesson 3:<br>CSS Style</a>
+      </div>
+      <div class="grey button">
+        <p><a href="#lesson-3-1">Avoid Repetition</a></p>
+      </div>
+      <div class="grey button">
+        <p><a href="#lesson-3-2">Inheritance</a></p>
+      </div>
+      <div class="grey button">
+        <p><a href="#lesson-3-3">The Flexbox Technique</a></p>
+      </div>
+      <div class="grey button">
+        <p><a href="#lesson-3-4">Code-Test-Refine</a></p>
+      </div>
+    </div>
+  </div>
+
+<!--End of index; beginning of lessons-->
+  <div class="beige lesson">
+    <h1 id="lesson-1">Lesson 1: Basics of HTML</h1>
+    <div class="topic" id="lesson-1-1">
+      <div class="content">
+        <div class="text">
+          <h2>What is the web?</h2>
+          The Web is a network of computers that communicate with one another using the Hypertext Transfer Protocol (<strong>HTTP</strong>). When users request a webpage like (<a href="http://www.ivy-way.com/">www.ivy-way.com</a>) their browsers fetch the Hypertext markup language (<strong>HTML</strong>) document and display it. <strong>HTML</strong> documents can contain text, images, links, videos, and anything else that can be programmed.</div>
+        <div class="imageandcaption">
+          <img src="http://i.imgur.com/XHlwpFE.png" alt="Failed to load image">
+          <em>Sketch of the Web by Steve Huffman for Udacity</em>
+        </div>
+      </div>
+    </div>
+
+    <div class="topic" id="lesson-1-2">
+      <div class="content">
+        <div class="text">
+          <h2>HTML Elements, Tags, and Attributes</h2>
+          HTML stands for:
+          <ul>
+            <li><strong>H</strong>: Hyper</li>
+            <li><strong>T</strong>: Text (What you see)</li>
+            <li><strong>M</strong>: Markup (How it looks)</li>
+            <li><strong>L</strong>: Language</li>
+          </ul>
+          The <strong>Markup</strong> aspect of HTML is achieved by Elements, Tags, and Attributes. <strong>Elements</strong> are semantic structures that describe the content inside. <strong>Tags</strong> marks the start and end of an <strong>Element</strong>. <strong>Attributes</strong> define properties for an <strong>Element</strong>. For more informtion, click <a href="http://www.456bereastreet.com/archive/200508/html_tags_vs_elements_vs_attributes/">here</a>.
+        </div>
+        <div class="imageandcaption">
+          <img src="https://familysearch.org/learn/wiki/en/images/0/04/HTML.jpg" alt="Failed to load image">
+          <em>https://familysearch.org/</em>
+        </div>
+      </div>
+    </div>
+
+    <div class="topic" id="lesson-1-3">
+      <div class="content">
+        <div class="text">
+          <h2>Block vs. Inline Elements</h2>
+          <strong>Block</strong> elements start a new line of text and form invisible boxes around the text, which stretch as far as possible to the left and right. Some common examples of <strong>block</strong> elements are:
+          <ul>
+            <li> <span>&lt;h1&gt;</span>text<span>&lt;/h1&gt;</span> = heading</li>
+            <li> <span>&lt;p&gt;</span>text<span>&lt;/p&gt;</span> = paragraph</li>
+            <li> <span>&lt;div&gt;</span>text<span>&lt;/div&gt;</span> = define a section</li>
+          </ul>
+          <strong>Inline</strong> elements format text without starting a new line. They take up the minimum amount of space necessary. Some common examples or <strong>inline</strong> elements are:
+          <ul>
+            <li><span>&lt;b&gt;</span>text<span>&lt;/b&gt;</span> = bold</li>
+            <li><span>&lt;em&gt;</span>text<span>&lt;/em&gt;</span> = <em>italic</em></li>
+            <li><span>&lt;a href="url"&gt;</span> = hyperlinks</li>
+            <li><span>&lt;img href"url"&gt;</span> = images</li>
+          </ul>
+          Another important distinction is between <strong>Void</strong> and <strong>Non-Void</strong> elements. <strong>Void</strong> elements require only an opening tag. <strong>Non-Void</strong> elements require an opening and a closing tab.
+          For more information on Block vs. Inline elements, click <a href="http://www.w3schools.com/html/html_blocks.asp">here</a>.
+        </div>
+        <div class="imageandcaption">
+          <img src="http://girldevelopit.github.io/gdi-core-html-css/images/example-blockinline.png" alt="Failed to load image">
+          <em>Girldevelopit @ Github</em>
+        </div>
+      </div>
+    </div>
+
+    <div class="topic" id="lesson-1-4">
+      <div class="content">
+        <div class="text">
+          <h2>Look it Up!</h2>
+          Programming is not about memorizing a bunch of symbols and elements. If you want to know how to do something, figure it out! Here are some great resources for HTML and CSS:
+          <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML Elements</a></li>
+            <li><a href="http://learnlayout.com/position.html">CSS Layouts</a></li>
+            <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS Flexbox</a>
+          </ul>
+        </div>
+        <div class="imageandcaption">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Look_it_up.png" alt="Failed to load image">
+          <em>Wikipedia Commons</em>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--Lesson 2 starts here -->
+
+  <div class="cream lesson">
+    <h1 id="lesson-2"><span style="color:#986734">Lesson 2: HTML Structure</span></h1>
+    <div class="topic" id="lesson-2-1">
+      <div class="content">
+        <div class="text">
+          <h2>A Website is like a House</h2>
+          One useful anology for understanding webpages is to think of them like a house. Consider...
+          <ul>
+            <li><strong>HTML</strong> comprises the structure of a webpage. It's like the walls.</li>
+            <li><strong>CSS</strong> styles the elements in a webpage. It's like paint and decorative trim.</li>
+            <li><strong>Javascript</strong> controls the moving elements of a webpage. It's like the applicances you find inside a house.</li>
+          </ul>
+          This unit does not cover JavaScript, but for more informtion, click <a href="http://www.w3schools.com/js/">here</a>.
+        </div>
+        <div class="imageandcaption">
+          <img src="http://blog.teamtreehouse.com/wp-content/uploads/2014/11/progressive-enhancement.png" alt="Failed to load image">
+          <em>https://teamtreehouse.com/</em>
+        </div>
+      </div>
+    </div>
+
+    <div class="topic" id="lesson-2-2">
+      <div class="content">
+        <div class="text">
+          <h2>The Document Object Model (DOM)</h2>
+          The <strong>DOM</strong> is a convention for manipulating and viewing objects in HTML. In the <strong>DOM</strong>, pages are designed with a <strong>"Tree-Like Structure"</strong>. <strong>Parent</strong> elements branch out into <strong>Child</strong> elements are that contained within the <strong>Parent</strong>. It is easy to explore the <strong>Tree-Like Structure</strong> of a webpage by opening <strong>Developer Tools</strong> in Chrome. For more information on the <strong>Document
+          Object Model</strong>, click <a href="http://www.w3.org/TR/WD-DOM/introduction.html">here</a>.
+        </div>
+        <div class="imageandcaption">
+          <img src="https://courses.cs.washington.edu/courses/cse190m/07sp/lectures/slides/images/dom_tree.gif" alt="Failed to load image">
+          <em>University of Washington Computer Science Dept.</em>
+        </div>
+      </div>
+    </div>
+
+    <div class="topic" id="lesson-2-3">
+      <div class="content">
+        <div class="text">
+          <h2>Boxify a Design</h2>
+          Often front-end web developers recieve PDF designs from graphic designers. The developers must turn these designs into websites. The first thing they do to accomplish this is <strong>Boxify</strong>. Here's how it works:
+          <ul>
+            <li>Everything on the web is made up of boxes, so draw boxes around everything you see that should be its own <strong>element</strong>.</li>
+            <li>Different people use different strategies. Some print a design and sketch boxes around elements with a pencil. Some cut out elements with scissors. Others use a sketch application on the computer.</li>
+            <li>Work from large to small, grouping smaller <strong>child</strong> elements inside larger <strong>parent</strong> elements.</li>
+          </ul>
+          After you Boxify a design, you will need to label each element with a class attribute. See the next topic for more information!
+        </div>
+        <div class="imageandcaption">
+          <img src="http://www.sendeasy.gr/blog/wp-content/uploads/2012/03/Labelled-boxes-packing-moving.jpg" alt="Failed to load image">
+          <em>www.sendeasy.gr</em>
+        </div>
+      </div>
+    </div>
+
+    <div class="topic" id="lesson-2-4">
+      <div class="content">
+        <div class="text">
+          <h2>Class Attributes</h2>
+          Once you <strong>Boxify</strong> a design, you need to label each of the <strong>elements</strong>. Some of them will fit into pre-made blocks like &lt;h1&gt; but most will need custom formatting. The most common way to do this is with <strong>Class Attributes</strong>. <strong>Class Attributes</strong> are like the labels on your boxes, so make sure they have names that make their purposes obvious.
+        </div>
+        <div class="imageandcaption">
+          <img src="http://klucid.com/sites/default/files/imagecache/portfolio_large/img_0790.jpg" alt="Failed to load image">
+          <em>http://klucid.com/</em>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Lesson 3 starts here -->
+
+  <div class="grey lesson">
+    <h1 id="lesson-3">Lesson 3: CSS Style</h1>
+    <div class="topic" id="lesson-3-1">
+      <div class="content">
+        <div class="text">
+          <h2>Avoid Repetition</h2>
+           One of the beautiful things about <strong>CSS</strong> is that it helps programmers avoid repetition. Once you define a <strong>class</strong> with various styles, you can use that <strong>class</strong> again and again and again! Here's why that's so great:
+          <ul>
+            <li>You will be able to code faster.</li>
+            <li>If you make an error, you only need to correct it once.</li>
+            <li>Your website will automatically have consistency of appearance between similar elements.</li>
+          </ul>
+          Without <strong>CSS</strong>, your <strong>HTML</strong> document would be much longer!
+        </div>
+        <div class="imageandcaption">
+          <img src="http://www.coveybasics.com/blog/wp-content/uploads/2012/08/redundancy-pizza-hut.jpg" alt="Failed to load image">
+          <em>www.coveybasics.com</em>
+        </div>
+      </div>
+    </div>
+
+    <div class="topic" id="lesson-3-2">
+      <div class="content">
+        <div class="text">
+          <h2>Inheritance</h2>
+          Children inherit things from their parents (if they're lucky)! In <strong>HTML</strong>, properties of <strong>parent</strong> elements are passed on to <strong>child</strong> elements unless otherwise specified in the <strong>child</strong> class. For example, if we have:
+          <ul style="list-style: none">
+            <li>1 &nbsp;&nbsp;.parent {</li>
+            <li>2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: white;</li>
+            <li>3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: black;</li>
+            <li>4 &nbsp;&nbsp;}</li>
+            <li>5</li>
+            <li>6 &nbsp;&nbsp;.child {</li>
+            <li>7 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: red;</li>
+            <li>8 &nbsp;&nbsp;}</li>
+          </ul>
+          then the text in both the <strong>parent</strong> and the <strong>child</strong> elements will be white, but their background colors will be different.
+        </div>
+        <div class="imageandcaption">
+          <img src="http://bricksofweb.com/wp-content/uploads/2013/05/inheritance_in_css.png" alt="Failed to load image">
+        </div>
+      </div>
+    </div>
+
+    <div class="topic" id="lesson-3-3">
+      <div class="content">
+        <div class="text">
+          <h2>The Flexbox Technique</h2>
+          You may recall that <strong>block</strong> elements stretch horizontally to infinity and stack vertically. But what if you want to order elements horizontally? Use <strong>Flexbox</strong>! To order <strong>child</strong> elements horizontally within a <strong>parent</strong> element, add the following code to the <strong>parent</strong>:
+          <ul style="list-style: none">
+            <li>1 &nbsp;&nbsp;.parent {</li>
+            <li>2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display: flex;</li>
+            <li>3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display: -webkit-flex;</li>
+            <li>4 &nbsp;&nbsp;}</li>
+          </ul>
+          Flex is powerful and does a lot more than just arrange elements horizontally. For more information click <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">here</a>.
+        </div>
+        <div class="imageandcaption">
+          <img src="http://www.w3.org/TR/css-flexbox-1/images/flex-pack.svg" alt="Failed to load image">
+          <em>www.w3.org</em>
+        </div>
+      </div>
+    </div>
+
+    <div class="topic" id="lesson-3-4">
+      <div class="content">
+        <div class="text">
+          <h2>Code-Test-Refine</h2>
+          Programming is recursive. Take one step at a time until your project is complete! The instructors suggest this pattern:
+          <ol>
+            <li>Boxify your design and plan the structure of the page.</li>
+            <li>Look for repeated styles and label the elements.</li>
+            <li>Write the HTML.</li>
+            <li>Apply styles from biggest to smallest.</li>
+            <li>Look at the details and fix what needs to be fixed until it is perfect.</li>
+          </ol>
+        </div>
+        <div class="imageandcaption">
+          <img src="https://prateekvjoshi.files.wordpress.com/2013/10/part-1.jpg" alt="Failed to load image">
+          <em>https://prateekvjoshi.files.wordpress.com</em>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
