@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+	background-image: url("http://st.depositphotos.com/1828227/1645/v/950/depositphotos_16452311-Wood-log-cuts-seamless-pattern-background.jpg");
+	background-repeat: repeat;
+}
+
+/* Begin "return to top" button classes */
+
+.fixed {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	background-color: black;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.return_to_top {
+	background-color: #FAF4E8;
+	color: black;
+	text-align: center;
+	font-size: 22pt;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+/* End "return to top" classes */
+
+.lesson {
+	margin: 5px auto;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 25px;
+	border-radius: 20px;
+	max-width: 85%;
+	min-width: 800px;
+	box-shadow: 15px 20px 30px black;
+	font-family: "Comic Sans MS";
+}
+
+h1 {
+	margin-bottom: 0px;
+	text-align: center;
+	color: #FAF4E8;
+	font-size: 28pt;
+}
+
+.indexrow {
+	padding: 5px;
+	display: -webkit-flex;
+    display: flex;
+    background-color: #FAF4E8;
+}
+
+.top {
+	border-top-left-radius: 5pt;
+	border-top-right-radius: 5pt;
+	margin-top: 8px;
+	padding-top: 16px;
+}
+
+.bottom {
+	border-bottom-left-radius: 5pt;
+	border-bottom-right-radius: 5pt;
+	padding-bottom: 16px;
+}
+
+/* Question: I looked up ways to make text align verticially
+within an element. The display: table-cell method
+seemed most effective. Is there a better way? */
+
+.button {
+	display: table;
+	text-align: center;
+	width: 18%;
+	height: 120px;
+	padding: 15px;
+	margin: 5px;
+	border-radius: 35%;
+	font-size: 16pt;
+}
+
+.button p {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+a {
+	color: inherit;
+}
+
+.beige {
+	background-color: #D19A40;
+	color: #FAF4E8;
+}
+
+.cream {
+	background-color: #F0DBC9;
+	color: #986734;
+}
+
+.grey {
+	background-color: #A37C81;
+	color: #FAF4E8;
+}
+
+.brown {
+	background-color: #986734;
+}
+
+.transparent {
+	color: #986734;
+	font-weight: bold;
+}
+
+/* End index styles; beginning of topics styles */
+
+.topic {
+	background-color: #FAF4E8;
+	color: black;
+	padding-left: 36px;
+	margin-bottom: 15px;
+	margin-top: 8px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	border-radius: 5pt;
+}
+
+.content {
+	display: flex;
+	display: -webkit-flex;
+	max-width: 98%;
+}
+
+.text {
+	margin-right: 20px;
+	max-width: 60%;
+}
+
+.imageandcaption {
+	text-align: center;
+	font-size: 9pt;
+	margin-right: 15px;
+	width: 40%
+}
+
+img {
+	max-width: 100%;
+	margin-left: 8px;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 14pt;
+	margin: 0px;
+	padding-bottom: 5px;
+	color: #986734;
+}
